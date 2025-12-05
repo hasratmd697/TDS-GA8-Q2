@@ -52,6 +52,7 @@ img.bg-cover {
 -->
 
 # Product Documentation — Marp Demo
+
 Technical Writer · Product Documentation
 
 Contact: 24f1002299@ds.study.iitm.ac.in
@@ -81,15 +82,18 @@ Contact: 24f1002299@ds.study.iitm.ac.in
 
 ---
 
-<!-- Background image slide: use an image asset path or remote URL. 
-     For best results place an `assets/` folder in the repo and put the image there.
--->
----
-<!-- background image slide -->
-![](assets/product_screenshot.jpg){class="bg-cover"}
+<!-- _backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920')" -->
 
-<!-- If the grader fetches raw markdown it will see the image reference above.
-     If the grader fetches rendered HTML the image will display as slide background. -->
+## Background Image Slide
+
+![bg right:40%](https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920)
+
+### Product Documentation Features
+
+- **Modern Design**: Clean, professional layouts
+- **Version Control**: Git-friendly markdown source
+- **Multi-format Export**: PDF, PPTX, HTML
+- **Mathematical Support**: LaTeX equations
 
 ---
 
@@ -119,3 +123,4 @@ import json
 with open('product_metadata.json') as f:
     data = json.load(f)
 print(sorted(data['features'], key=lambda x: x['priority'])[:5])
+```
